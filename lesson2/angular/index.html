@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+  <head>
+    <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+    <script src="angular.js"></script>
+    <script src="angular-resource.js"></script>
+    <script src="angular-route.js"></script>
+    <script src="script.js"></script>
+  </head>
+  <body ng-controller="MyController">
+    <div ng-repeat="todo in todos">
+      Item {{$index}} - {{todo}}
+      <a href="#" ng-click="delete()"><i class="fa fa-2x fa-refresh"></i></a>
+    </div>
+  <br/>
+  </body>
+</html>
